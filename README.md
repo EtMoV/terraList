@@ -1,37 +1,51 @@
-## Welcome to GitHub Pages
+# Welcome to TerraList
 
-You can use the [editor on GitHub](https://github.com/EtMoV/terraList/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+TerraList is a group of useful terraform script !
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+We put here all terraform script we create !
 
-### Markdown
+See [below](#markdown) how to use install and use terraform script
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## What is Terraform
 
-```markdown
-Syntax highlighted code block
+[Terraform](https://www.terraform.io/) is a useful tool where you can configure, deploy and install your cloud infrastructure.
 
-# Header 1
-## Header 2
-### Header 3
+Terraform works on the principle "Infrastructure as code". So to use it, you have to write and run script you need.
 
-- Bulleted
-- List
+So, we thought to make a terraform script "library" which are often used a lot and which you can also use as a base template.
 
-1. Numbered
-2. List
+Please feel free to give us feedback and report any errors you may see.
 
-**Bold** and _Italic_ and `Code` text
+## How to use
 
-[Link](url) and ![Image](src)
+To use a terraform script you need to do 3 simple steps :
+
+- [Install Terraform](#install)
+- [Configure your CLI of your provider](#provider)
+- [Download and run the script you want](#run-a-Script)
+
+### Install Terraform
+
+Just follow instructions [here](https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/)
+
+### Provider
+
+(For now, we just have AWS, soon you can use script on Azure and Gcloud).
+
+To configure AWS you need to install [AWS CLI](lien-aws-cli) and you have to [set up a keypair sur IAM](lien-article)
+
+### Download and run the script you want
+Donwload script file you need in _list scripts_ section.
+
+By default all script point on "Irlande region", read documentation of the script if 
+Launch following command
+
+``` 
+Command to run
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## How to report a problem
 
-### Jekyll Themes
+Create an [issue](lien issue)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/EtMoV/terraList/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Happy coding !
